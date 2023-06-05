@@ -1,0 +1,4 @@
+#!/bin/bash
+#this command allows you to run the code from the string in the environmental variable directly without using a temporary file
+
+python3 -c "$PYCODE"
