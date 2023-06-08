@@ -1,1 +1,1 @@
-Importing and working with Python modules
+Importing modules

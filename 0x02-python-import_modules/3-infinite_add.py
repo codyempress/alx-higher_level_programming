@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-import sys
 if __name__ == "__main__":
-    num = int(len(sys.argv) - 1)
-    total = 0
+    from sys import argv
+    # a program to do infinite addition
 
-    for i in range(1, num + 1):
-        arg = sys.argv[i]
-        total += int(arg)
-
-    print(total)
+    if (len(argv) < 2):
+        print("0")
+    elif (len(argv) == 2):
+        print(argv[1])
+    else:
+        dup = [int(argv[i]) for i in range(1, len(argv))]
+        Sum = sum(dup)
+        print(Sum)
